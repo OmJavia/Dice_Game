@@ -16,7 +16,11 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left,  rgb(233, 202, 99) 0%,#60bfeb 100%);
+  background-image: linear-gradient(
+    to top left,
+    rgb(233, 202, 99) 0%,
+    #60bfeb 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
