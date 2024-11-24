@@ -7,14 +7,21 @@ const score0El = document.querySelector('#score--0');
 const score1El = document.getElementById('score--1');
 const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
+<<<<<<< HEAD
+=======
+
+>>>>>>> 75bcc9926fe5ab07e08a25a7f37876ee6f0c7495
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
+<<<<<<< HEAD
 // Adding the dice sound
 const diceSound = new Audio('./Sound/dice.mp3'); 
 
+=======
+>>>>>>> 75bcc9926fe5ab07e08a25a7f37876ee6f0c7495
 let scores, currentScore, activePlayer, playing;
 
 // Starting conditions
@@ -48,16 +55,23 @@ const switchPlayer = function () {
 // Rolling dice functionality
 btnRoll.addEventListener('click', function () {
   if (playing) {
+<<<<<<< HEAD
     // Play the dice sound
     diceSound.currentTime = 0; // Reset sound to the start
     diceSound.play();
 
+=======
+>>>>>>> 75bcc9926fe5ab07e08a25a7f37876ee6f0c7495
     // 1. Generating a random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
 
     // 2. Display dice
     diceEl.classList.remove('hidden');
+<<<<<<< HEAD
     diceEl.src = `./Images/dice-${dice}.png`;
+=======
+    diceEl.src = `Images/dice-${dice}.png`;
+>>>>>>> 75bcc9926fe5ab07e08a25a7f37876ee6f0c7495
 
     // 3. Check for rolled 1
     if (dice !== 1) {
@@ -77,6 +91,10 @@ btnHold.addEventListener('click', function () {
   if (playing) {
     // 1. Add current score to active player's score
     scores[activePlayer] += currentScore;
+<<<<<<< HEAD
+=======
+    // scores[1] = scores[1] + currentScore
+>>>>>>> 75bcc9926fe5ab07e08a25a7f37876ee6f0c7495
 
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
